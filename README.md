@@ -170,6 +170,15 @@ Fixtures
 
 [ruff](https://astral.sh/ruff) is an all-in-one linter.
 
+It's claimed to be fast. I tested it on the cpython codebase. It was blazing fast!
+
+```bash
+$ ruff check .
+
+Found 11133 errors.
+[*] 3890 potentially fixable with the --fix option.
+```
+
 > See [pyproject.toml](pyproject.toml) for the configuration.
 
 ### Static Analysis
