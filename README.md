@@ -88,7 +88,9 @@ A test plan is a document describing the scope, approach, resources, and schedul
 
 > <https://www.honeybadger.io/blog/code-test-coverage-python/>
 >
-> File(s): [tests.py](tests.py), [main.py](main.py), [.coverage](.coverage)
+> File(s): [tests.py](/tests.py), [main.py](/main.py), [.coverage](/.coverage)
+
+For transition from code coverage to test coverage, see [this code diff](https://github.com/NdagiStanley/code-quality/commit/55a99f932b5be6c8d2ce1ec6553f2435fba460cd).
 
 ```bash
 coverage run -m unittest discover
@@ -98,7 +100,7 @@ coverage run -m unittest discover
 
 > <https://realpython.com/python-testing/>
 >
-> File(s): [test_sum.py](test_sum.py)
+> File(s): [test_sum.py](/test_sum.py)
 
 - **integration testing** - Testing multiple components
 
@@ -108,7 +110,9 @@ coverage run -m unittest discover
 
   A unit test helps you to isolate what is broken in your application and fix it faster
 
-[test_sum.py](test_sum.py) has:
+### Further
+
+[test_sum.py](/test_sum.py) has:
 
 - **test case**
 - **assertion**
@@ -131,15 +135,17 @@ An **AssertionError** is raised when a test fails. This is a subclass of **Excep
 
 Such an assertion works best singly. To run more tests, enter **test runners**.
 
+### Test runners
+
 The **test runner** is a special application designed for running tests, checking the output, and giving you tools for debugging and diagnosing tests and applications.
 
-- unittest - [test_sum_unittest.py](test_sum_unittest.py)
+- unittest - [test_sum_unittest.py](/test_sum_unittest.py)
 - nose (now nose2)
   - extends unittest to make testing nicer and easier to understand
   - supports execution of `unittest` test cases
   - install `pip install nose2`
   - run `python -m nose2`
-- pytest - [test_sum_pytest.py](test_sum_pytest.py)
+- pytest - [test_sum_pytest.py](/test_sum_pytest.py)
   - most popular
   - supports execution of `unittest` test cases
   - `pytest` test cases: functions in a Python file starting with the name test_
