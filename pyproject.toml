@@ -1,0 +1,12 @@
+[tool.ruff]
+line-length = 120
+select = [
+  "N", # pep8-naming
+  "I", # isort
+  "E", # pycodestyle
+  "F", # pyflakes
+  "B", # flake8-bugbear
+  "UP", # pyupgrade
+  # "PL", # pylint
+]
+target-version = "py312"
